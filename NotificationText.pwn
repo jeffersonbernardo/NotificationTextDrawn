@@ -1,17 +1,3 @@
-Pra usar as Mensagens em TextDrawn você vai ter que trocar todas mensagens
-que tiver SendClientMessage pela mensagem que você preferir
-
-ShowInfo
-ShowError
-SuccesMsg
-
-Quando escolher retire as cores das mensagens vou deixar um exemplo
-
-//Incorreto
-SendClientMessage(playerid, -1, "{009CFF}Emprego de motorista de onibus!");
-//Correto
-ShowInfo(playerid, "Emprego de motorista de onibus!");
-
 #include <a_samp> 
 #include <sscanf2>
 #include <streamer>
@@ -59,7 +45,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
 	return 1;
 }
-//=======[ NOTIFY ]=========//
+//=======[ NOTIFICAÇÃO EM TEXTDRAWN ]=========//
 forward HideNotify(playerid);
 public HideNotify(playerid)
 {
